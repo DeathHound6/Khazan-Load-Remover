@@ -11,7 +11,7 @@ state("BBQ-Win64-Shipping", "18020287")
 
 state("BBQ-Win64-Shipping", "18190041")
 {
-    byte isLoadingFlag: 0x79BE450;
+    byte isLoadingFlag: 0x7905980, 0x0, 0xB8, 0x10, 0x100, 0x78, 0x18, 0x8BC;
 }
 
 startup
@@ -42,11 +42,6 @@ init
         version = "18190041";
     else
         version = "unknown";
-}
-
-start
-{
-    return old.isLoadingFlag == 0 && current.isLoadingFlag != 0; 
 }
 
 isLoading {
