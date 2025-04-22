@@ -33,7 +33,7 @@ startup
 
 init
 {
-    byte[] checksum = vars.CalcModuleHash(current.MainModule);
+    byte[] checksum = vars.CalcModuleHash(modules.First());
     if (Enumerable.SequenceEqual(checksum, vars.build_18020287))
         version = "18020287";
     // else if (Enumerable.SequenceEqual(checksum, vars.build_18156695))
