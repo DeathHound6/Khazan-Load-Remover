@@ -11,7 +11,7 @@ state("BBQ-Win64-Shipping", "18020287")
 
 state("BBQ-Win64-Shipping", "18190041")
 {
-    byte isLoadingFlag: 0x078FBA38, 0x80, 0x198, 0x160, 0x20, 0x160, 0x118, 0xB6C;
+    byte isLoadingFlag: 0x79892B5;
 }
 
 startup
